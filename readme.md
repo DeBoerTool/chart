@@ -1,0 +1,1 @@
+A chart, or collection of tolerance definitions.
