@@ -9,8 +9,9 @@ const EmptyTolerancesDefinition: TolerancesDefinition = {
   units: 'none'
 }
 
-const findInRange = item => measurement => 
-  measurement.isInRange(item.range) 
+const findInRange = (item: TolerancesDefinition) => 
+  (measurement: IMeasurement) => 
+    measurement.isInRange(item.range) 
     && measurement.unit().isCode(item.units)
 
 class Chart implements IChart
